@@ -2,23 +2,23 @@
 #include<math.h>
 
 
-// void sum();              // declare the function    or prototype   or signature       
-// int main (){
-//     sum();               // calling the function 
-//     return 0;
+void sum();              // declare the function    or prototype   or signature       
+int main (){
+    sum();               // calling the function 
+    return 0;
     
-// }
-// void sum (){             // defining  the function 
-//     int a,b;
-//     scanf("%d%d",&a,&b);
-//     printf("the summ is %d",a+b);
-// }
+}
+void sum (){             // defining  the function 
+    int a,b;
+    scanf("%d%d",&a,&b);
+    printf("the summ is %d",a+b);
+}
 
-// int main(){
-// int a,b;
-// scanf("%d%d",&a,&b);
-// printf("The sum is %d",sum(a,b));
-// return 0;
+int main(){
+int a,b;
+scanf("%d%d",&a,&b);
+printf("The sum is %d",sum(a,b));
+return 0;
 
 
 // }
