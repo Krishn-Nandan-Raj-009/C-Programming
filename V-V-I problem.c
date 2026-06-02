@@ -200,7 +200,7 @@ int main() {
     }
     return 0;
 }  
-  /*            Function  problems   */
+  /*            ARRAYS  problems   */
 
 1) Second Largest Element
 #include<stdio.h>
@@ -306,6 +306,153 @@ int main(){
 
     printf("Sum = %d",sum);
 }
+
+
+
+//   important  algorithms  in arrays  1d and 2d  
+
+
+6) Insert at Specific Position
+#include<stdio.h>
+int main(){
+    int a[100],n,i,pos,val;
+
+    scanf("%d",&n);
+
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+
+    scanf("%d%d",&pos,&val);
+
+    for(i=n;i>=pos;i--)
+        a[i]=a[i-1];
+
+    a[pos-1]=val;
+    n++;
+
+    for(i=0;i<n;i++)
+        printf("%d ",a[i]);
+}
+7) Delete from Specific Position
+#include<stdio.h>
+int main(){
+    int a[100],n,i,pos;
+
+    scanf("%d",&n);
+
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+
+    scanf("%d",&pos);
+
+    for(i=pos-1;i<n-1;i++)
+        a[i]=a[i+1];
+
+    n--;
+
+    for(i=0;i<n;i++)
+        printf("%d ",a[i]);
+}
+8) Linear Search
+#include<stdio.h>
+int main(){
+    int a[100],n,i,key,found=0;
+
+    scanf("%d",&n);
+
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+
+    scanf("%d",&key);
+
+    for(i=0;i<n;i++){
+        if(a[i]==key){
+            printf("Found at %d",i);
+            found=1;
+            break;
+        }
+    }
+
+    if(!found)
+        printf("Not found");
+}
+9) Binary Search
+#include<stdio.h>
+int main(){
+    int a[100],n,key,low=0,high,mid,i;
+
+    scanf("%d",&n);
+
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+
+    scanf("%d",&key);
+
+    high=n-1;
+
+    while(low<=high){
+        mid=(low+high)/2;
+
+        if(a[mid]==key){
+            printf("Found");
+            return 0;
+        }
+        else if(key>a[mid])
+            low=mid+1;
+        else
+            high=mid-1;
+    }
+
+    printf("Not Found");
+}
+10) Bubble Sort Ascending
+#include<stdio.h>
+int main(){
+    int a[100],n,i,j,temp;
+
+    scanf("%d",&n);
+
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+
+    for(i=0;i<n-1;i++){
+        for(j=0;j<n-i-1;j++){
+            if(a[j]>a[j+1]){
+                temp=a[j];
+                a[j]=a[j+1];
+                a[j+1]=temp;
+            }
+        }
+    }
+
+    for(i=0;i<n;i++)
+        printf("%d ",a[i]);
+}
+11) Matrix Addition
+#include<stdio.h>
+int main(){
+    int a[10][10],b[10][10],c[10][10];
+    int i,j,r,c1;
+
+    scanf("%d%d",&r,&c1);
+
+    for(i=0;i<r;i++)
+        for(j=0;j<c1;j++)
+            scanf("%d",&a[i][j]);
+
+    for(i=0;i<r;i++)
+        for(j=0;j<c1;j++)
+            scanf("%d",&b[i][j]);
+
+    for(i=0;i<r;i++){
+        for(j=0;j<c1;j++){
+            c[i][j]=a[i][j]+b[i][j];
+            printf("%d ",c[i][j]);
+        }
+        printf("\n");
+    }
+}
+
 
 
 
