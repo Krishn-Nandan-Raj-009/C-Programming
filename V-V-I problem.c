@@ -200,7 +200,112 @@ int main() {
     }
     return 0;
 }  
+  /*            Function  problems   */
 
+1) Second Largest Element
+#include<stdio.h>
+int main(){
+    int a[100],n,i,largest,second;
+
+    printf("Enter size: ");
+    scanf("%d",&n);
+
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+
+    largest=second=a[0];
+
+    for(i=1;i<n;i++){
+        if(a[i]>largest){
+            second=largest;
+            largest=a[i];
+        }
+        else if(a[i]>second && a[i]!=largest){
+            second=a[i];
+        }
+    }
+
+    printf("Second largest = %d",second);
+}
+2) Frequency of Given Element
+#include<stdio.h>
+int main(){
+    int a[100],n,i,key,count=0;
+
+    scanf("%d",&n);
+
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+
+    printf("Enter element: ");
+    scanf("%d",&key);
+
+    for(i=0;i<n;i++){
+        if(a[i]==key)
+            count++;
+    }
+
+    printf("Frequency = %d",count);
+}
+3) Print Duplicate Elements
+#include<stdio.h>
+int main(){
+    int a[100],n,i,j;
+
+    scanf("%d",&n);
+
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+
+    printf("Duplicates: ");
+
+    for(i=0;i<n;i++){
+        for(j=i+1;j<n;j++){
+            if(a[i]==a[j]){
+                printf("%d ",a[i]);
+                break;
+            }
+        }
+    }
+}
+4) Merge Two Arrays
+#include<stdio.h>
+int main(){
+    int a[50],b[50],c[100];
+    int n1,n2,i;
+
+    scanf("%d",&n1);
+    for(i=0;i<n1;i++)
+        scanf("%d",&a[i]);
+
+    scanf("%d",&n2);
+    for(i=0;i<n2;i++)
+        scanf("%d",&b[i]);
+
+    for(i=0;i<n1;i++)
+        c[i]=a[i];
+
+    for(i=0;i<n2;i++)
+        c[n1+i]=b[i];
+
+    for(i=0;i<n1+n2;i++)
+        printf("%d ",c[i]);
+}
+5) Sum of Even Index Elements
+#include<stdio.h>
+int main(){
+    int a[100],n,i,sum=0;
+
+    scanf("%d",&n);
+
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+
+    for(i=0;i<n;i+=2)
+        sum+=a[i];
+
+    printf("Sum = %d",sum);
+}
 
 
 
