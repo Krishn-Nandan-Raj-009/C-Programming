@@ -455,4 +455,94 @@ int main(){
 
 
 
+12) Transpose Matrix
+#include<stdio.h>
+int main(){
+    int a[10][10];
+    int i,j,r,c;
+
+    scanf("%d%d",&r,&c);
+
+    for(i=0;i<r;i++)
+        for(j=0;j<c;j++)
+            scanf("%d",&a[i][j]);
+
+    for(i=0;i<c;i++){
+        for(j=0;j<r;j++){
+            printf("%d ",a[j][i]);
+        }
+        printf("\n");
+    }
+}
+13) Array Palindrome
+#include<stdio.h>
+int main(){
+    int a[100],n,i,flag=1;
+
+    scanf("%d",&n);
+
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+
+    for(i=0;i<n/2;i++){
+        if(a[i]!=a[n-1-i]){
+            flag=0;
+            break;
+        }
+    }
+
+    if(flag)
+        printf("Palindrome");
+    else
+        printf("Not Palindrome");
+}
+14) Separate Even and Odd
+#include<stdio.h>
+int main(){
+    int a[100],n,i;
+
+    scanf("%d",&n);
+
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+
+    printf("Even: ");
+    for(i=0;i<n;i++)
+        if(a[i]%2==0)
+            printf("%d ",a[i]);
+
+    printf("\nOdd: ");
+    for(i=0;i<n;i++)
+        if(a[i]%2!=0)
+            printf("%d ",a[i]);
+}
+15) Remove Duplicates
+#include<stdio.h>
+int main(){
+    int a[100],n,i,j,k;
+
+    scanf("%d",&n);
+
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+
+    for(i=0;i<n;i++){
+        for(j=i+1;j<n;j++){
+            if(a[i]==a[j]){
+                for(k=j;k<n-1;k++)
+                    a[k]=a[k+1];
+                n--;
+                j--;
+            }
+        }
+    }
+
+    for(i=0;i<n;i++)
+        printf("%d ",a[i]);
+}
+
+
+
+
+
 
