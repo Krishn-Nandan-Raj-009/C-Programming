@@ -92,3 +92,25 @@ printf("x is not zero\n");
     else{
         printf("not allowed to vote or drive");
     }
+
+
+
+Check Leap Year
+Input: 2024
+Output: Leap Year
+Code
+#include<stdio.h>
+
+int main()
+{
+    int year;
+
+    scanf("%d",&year);
+
+    if((year%4==0 && year%100!=0) || year%400==0)
+        printf("Leap Year");
+    else
+        printf("Not Leap Year");
+
+    return 0;
+}
