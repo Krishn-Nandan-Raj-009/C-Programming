@@ -543,6 +543,132 @@ int main(){
 
 
 
+1) Pass Array to Function → Find Sum
+Logic:
+Take array input
+Pass array + size to function
+Function calculates sum
+Return sum
+#include<stdio.h>
+
+int sumArray(int arr[], int n)
+{
+    int i, sum = 0;
+
+    for(i=0; i<n; i++)
+    {
+        sum += arr[i];
+    }
+
+    return sum;
+}
+
+int main()
+{
+    int arr[100], n, i, result;
+
+    printf("Enter size: ");
+    scanf("%d",&n);
+
+    printf("Enter elements: ");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+
+    result = sumArray(arr,n);
+
+    printf("Sum = %d",result);
+
+    return 0;
+}
+2) Pass Array to Function → Find Maximum Element
+Logic:
+Assume first element is max
+Compare remaining elements
+Update max if bigger value found
+#include<stdio.h>
+
+int findMax(int arr[], int n)
+{
+    int i, max;
+
+    max = arr[0];
+
+    for(i=1;i<n;i++)
+    {
+        if(arr[i] > max)
+        {
+            max = arr[i];
+        }
+    }
+
+    return max;
+}
+
+int main()
+{
+    int arr[100], n, i, result;
+
+    printf("Enter size: ");
+    scanf("%d",&n);
+
+    printf("Enter elements: ");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+
+    result = findMax(arr,n);
+
+    printf("Maximum = %d",result);
+
+    return 0;
+}
+3) Pass Array to Function → Reverse Array
+Logic:
+Use two pointers/indexes:
+start = 0
+end = n-1
+Swap elements until start < end
+#include<stdio.h>
+
+void reverseArray(int arr[], int n)
+{
+    int i, temp;
+
+    for(i=0;i<n/2;i++)
+    {
+        temp = arr[i];
+        arr[i] = arr[n-1-i];
+        arr[n-1-i] = temp;
+    }
+}
+
+int main()
+{
+    int arr[100], n, i;
+
+    printf("Enter size: ");
+    scanf("%d",&n);
+
+    printf("Enter elements: ");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+
+    reverseArray(arr,n);
+
+    printf("Reversed array: ");
+    for(i=0;i<n;i++)
+    {
+        printf("%d ",arr[i]);
+    }
+
+    return 0;
+}
+
 
 
 
