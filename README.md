@@ -156,7 +156,7 @@ output.exe
 - [ ] File Handling
 - [ ] Dynamic Memory Allocation
 
----
+-----  ------   -------- ----------  --------
 
 ## 🛠 Technologies Used
 
