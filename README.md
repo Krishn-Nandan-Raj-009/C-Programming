@@ -8,7 +8,7 @@
 
 </div>
 
-## 📖 About This Repository
+## 📖 About This Repositories 
 
 This repository contains my **chapter-wise C programming practice programs** created while learning and strengthening my programming fundamentals.
 
