@@ -10,31 +10,31 @@ int main() {
     ptr=(int*)calloc(n,sizeof(int));
     printf("Enter the values");
 
-    // for(int i=0;i<n;i++){
-    //     scanf("%d",ptr+i);
+    for(int i=0;i<n;i++){
+        scanf("%d",ptr+i);
 
-    // }
+    }
 
-    // printf("values are");
-    // for (int i=0;i<n;i++){
-    //     printf("%d ",ptr[i]);
-    // }
+    printf("values are");
+    for (int i=0;i<n;i++){
+        printf("%d ",ptr[i]);
+    }
 
-    // int ns;
-    // printf("Enter new size");
-    // scanf("%d",&ns);
-    // ptr=(int*)realloc(ptr,sizeof(int));
-    // printf("enter the values");
+    int ns;
+    printf("Enter new size");
+    scanf("%d",&ns);
+    ptr=(int*)realloc(ptr,sizeof(int));
+    printf("enter the values");
 
-    // for(int i=n;i<ns;i++){
-    //     scanf("%d",ptr+i);
+    for(int i=n;i<ns;i++){
+        scanf("%d",ptr+i);
 
-    // }
+    }
 
-    //  printf(" new values are");
+     printf(" new values are");
 
-    // for (int i=0;i<ns;i++){
-    //     printf("%d ",ptr[i]);  }
+    for (int i=0;i<ns;i++){
+        printf("%d ",ptr[i]);  }
 
 
 
@@ -62,7 +62,7 @@ else{printf("%d",loc);}
 
 
 
-    // free(ptr);
+    free(ptr);
 
 
 
