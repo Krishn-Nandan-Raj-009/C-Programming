@@ -455,5 +455,195 @@ int main()
 
 
 
+}
+🟠 10. Reverse Number Using Function
+#include<stdio.h>
+
+int reverse(int n)
+{
+    int rev=0;
+
+    while(n>0)
+    {
+        rev=rev*10+n%10;
+        n/=10;
+    }
+
+    return rev;
+}
+
+int main()
+{
+    printf("%d",reverse(1234));
+}
+🟠 11. Palindrome Number Using Function
+#include<stdio.h>
+
+int reverse(int n)
+{
+    int rev=0;
+
+    while(n)
+    {
+        rev=rev*10+n%10;
+        n/=10;
+    }
+
+    return rev;
+}
+
+int main()
+{
+    int n=121;
+
+    if(n==reverse(n))
+        printf("Palindrome");
+    else
+        printf("Not Palindrome");
+}
+🟠 12. Armstrong Number Using Function
+#include<stdio.h>
+
+int armstrong(int n)
+{
+    int sum=0,temp=n,r;
+
+    while(temp)
+    {
+        r=temp%10;
+        sum+=r*r*r;
+        temp/=10;
+    }
+
+    return sum==n;
+}
+
+int main()
+{
+    int n=153;
+
+    if(armstrong(n))
+        printf("Armstrong");
+}
+🔵 13. Swap Using Call By Value
+#include<stdio.h>
+
+void swap(int a,int b)
+{
+    int temp;
+
+    temp=a;
+    a=b;
+    b=temp;
+}
+
+int main()
+{
+    int x=10,y=20;
+
+    swap(x,y);
+
+    printf("%d %d",x,y);
+}
+
+Output:
+
+10 20
+🔵 14. Swap Using Call By Reference
+#include<stdio.h>
+
+void swap(int *a,int *b)
+{
+    int temp;
+
+    temp=*a;
+    *a=*b;
+    *b=temp;
+}
+
+int main()
+{
+    int x=10,y=20;
+
+    swap(&x,&y);
+
+    printf("%d %d",x,y);
+}
+
+Output:
+
+20 10
+🔵 15. Find GCD Using Function
+#include<stdio.h>
+
+int gcd(int a,int b)
+{
+    while(b!=0)
+    {
+        int temp=b;
+        b=a%b;
+        a=temp;
+    }
+
+    return a;
+}
+
+int main()
+{
+    printf("%d",gcd(12,18));
+}
+🔴 16. Recursive Factorial
+#include<stdio.h>
+
+int fact(int n)
+{
+    if(n==0 || n==1)
+        return 1;
+
+    return n*fact(n-1);
+}
+
+int main()
+{
+    printf("%d",fact(5));
+}
+🔴 17. Recursive Fibonacci
+#include<stdio.h>
+
+int fib(int n)
+{
+    if(n<=1)
+        return n;
+
+    return fib(n-1)+fib(n-2);
+}
+
+int main()
+{
+    int i;
+
+    for(i=0;i<10;i++)
+        printf("%d ",fib(i));
+}
+🔴 18. Pass Array to Function (Very Important)
+#include<stdio.h>
+
+int sumArray(int arr[],int n)
+{
+    int i,sum=0;
+
+    for(i=0;i<n;i++)
+        sum+=arr[i];
+
+    return sum;
+}
+
+int main()
+{
+    int arr[5]={1,2,3,4,5};
+
+    printf("%d",sumArray(arr,5));
+}
+
 
 
