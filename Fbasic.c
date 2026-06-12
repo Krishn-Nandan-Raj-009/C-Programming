@@ -272,6 +272,188 @@ int main() {
 
 
 
+.
+
+🟢 1. Sum of Two Numbers Using Function
+#include<stdio.h>
+
+int sum(int a, int b)
+{
+    return a+b;
+}
+
+int main()
+{
+    int x,y;
+
+    scanf("%d%d",&x,&y);
+
+    printf("Sum = %d",sum(x,y));
+
+    return 0;
+}
+🟢 2. Check Even/Odd Using Function
+#include<stdio.h>
+
+void evenOdd(int n)
+{
+    if(n%2==0)
+        printf("Even");
+    else
+        printf("Odd");
+}
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+
+    evenOdd(n);
+}
+🟢 3. Find Maximum of Two Numbers
+#include<stdio.h>
+
+int max(int a,int b)
+{
+    if(a>b)
+        return a;
+    else
+        return b;
+}
+
+int main()
+{
+    int a,b;
+
+    scanf("%d%d",&a,&b);
+
+    printf("%d",max(a,b));
+}
+🟢 4. Find Maximum of Three Numbers
+#include<stdio.h>
+
+int max3(int a,int b,int c)
+{
+    if(a>b && a>c)
+        return a;
+    else if(b>c)
+        return b;
+    else
+        return c;
+}
+
+int main()
+{
+    printf("%d",max3(10,25,15));
+}
+🟡 5. Factorial Using Function
+#include<stdio.h>
+
+int fact(int n)
+{
+    int i,f=1;
+
+    for(i=1;i<=n;i++)
+        f*=i;
+
+    return f;
+}
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+
+    printf("%d",fact(n));
+}
+🟡 6. Prime Number Using Function
+#include<stdio.h>
+
+int prime(int n)
+{
+    int i;
+
+    for(i=2;i<=n/2;i++)
+    {
+        if(n%i==0)
+            return 0;
+    }
+
+    return 1;
+}
+
+int main()
+{
+    int n;
+
+    scanf("%d",&n);
+
+    if(prime(n))
+        printf("Prime");
+    else
+        printf("Not Prime");
+}
+🟡 7. Fibonacci Series Using Function
+#include<stdio.h>
+
+void fibonacci(int n)
+{
+    int a=0,b=1,c,i;
+
+    for(i=1;i<=n;i++)
+    {
+        printf("%d ",a);
+
+        c=a+b;
+        a=b;
+        b=c;
+    }
+}
+
+int main()
+{
+    fibonacci(10);
+}
+🟡 8. Power Function
+#include<stdio.h>
+
+int power(int base,int exp)
+{
+    int i,result=1;
+
+    for(i=1;i<=exp;i++)
+        result*=base;
+
+    return result;
+}
+
+int main()
+{
+    printf("%d",power(2,5));
+}
+🟡 9. Sum of Digits
+#include<stdio.h>
+
+int sumDigits(int n)
+{
+    int sum=0;
+
+    while(n>0)
+    {
+        sum+=n%10;
+        n/=10;
+    }
+
+    return sum;
+}
+
+int main()
+{
+    printf("%d",sumDigits(1234));
+}
+
+
+
 
 
 
