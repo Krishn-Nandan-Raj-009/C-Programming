@@ -249,3 +249,189 @@ int main()
     else
         printf("Not Eligible");
 }
+
+
+
+
+10. Profit or Loss
+#include<stdio.h>
+
+int main()
+{
+    int cp,sp;
+
+    scanf("%d%d",&cp,&sp);
+
+    if(sp>cp)
+        printf("Profit = %d",sp-cp);
+    else if(cp>sp)
+        printf("Loss = %d",cp-sp);
+    else
+        printf("No Profit No Loss");
+}
+11. Grade Calculation
+#include<stdio.h>
+
+int main()
+{
+    int marks;
+
+    scanf("%d",&marks);
+
+    if(marks>=90)
+        printf("A");
+    else if(marks>=80)
+        printf("B");
+    else if(marks>=70)
+        printf("C");
+    else if(marks>=60)
+        printf("D");
+    else
+        printf("F");
+}
+12. Check Triangle Validity
+#include<stdio.h>
+
+int main()
+{
+    int a,b,c;
+
+    scanf("%d%d%d",&a,&b,&c);
+
+    if(a+b>c && a+c>b && b+c>a)
+        printf("Valid Triangle");
+    else
+        printf("Invalid Triangle");
+}
+13. Type of Triangle
+#include<stdio.h>
+
+int main()
+{
+    int a,b,c;
+
+    scanf("%d%d%d",&a,&b,&c);
+
+    if(a==b && b==c)
+        printf("Equilateral");
+    else if(a==b || b==c || a==c)
+        printf("Isosceles");
+    else
+        printf("Scalene");
+}
+14. Electricity Bill
+#include<stdio.h>
+
+int main()
+{
+    int units,bill;
+
+    scanf("%d",&units);
+
+    if(units<=100)
+        bill=units*5;
+    else if(units<=200)
+        bill=100*5+(units-100)*7;
+    else
+        bill=100*5+100*7+(units-200)*10;
+
+    printf("%d",bill);
+}
+15. Simple Calculator Using Switch
+#include<stdio.h>
+
+int main()
+{
+    int a,b;
+    char op;
+
+    scanf("%d %c %d",&a,&op,&b);
+
+    switch(op)
+    {
+        case '+': printf("%d",a+b); break;
+        case '-': printf("%d",a-b); break;
+        case '*': printf("%d",a*b); break;
+        case '/': printf("%d",a/b); break;
+        default: printf("Invalid");
+    }
+}
+16. Day of Week Using Switch
+#include<stdio.h>
+
+int main()
+{
+    int day;
+
+    scanf("%d",&day);
+
+    switch(day)
+    {
+        case 1: printf("Monday"); break;
+        case 2: printf("Tuesday"); break;
+        case 3: printf("Wednesday"); break;
+        case 4: printf("Thursday"); break;
+        case 5: printf("Friday"); break;
+        case 6: printf("Saturday"); break;
+        case 7: printf("Sunday"); break;
+        default: printf("Invalid");
+    }
+}
+17. Month Name Using Switch
+#include<stdio.h>
+
+int main()
+{
+    int month;
+
+    scanf("%d",&month);
+
+    switch(month)
+    {
+        case 1: printf("January"); break;
+        case 2: printf("February"); break;
+        case 3: printf("March"); break;
+        case 4: printf("April"); break;
+        case 5: printf("May"); break;
+        case 6: printf("June"); break;
+        case 7: printf("July"); break;
+        case 8: printf("August"); break;
+        case 9: printf("September"); break;
+        case 10: printf("October"); break;
+        case 11: printf("November"); break;
+        case 12: printf("December"); break;
+        default: printf("Invalid");
+    }
+}
+18. Menu Driven Program Using Switch
+#include<stdio.h>
+
+int main()
+{
+    int choice,n;
+
+    printf("1.Even/Odd\n2.Positive/Negative\n");
+    scanf("%d",&choice);
+
+    switch(choice)
+    {
+        case 1:
+            scanf("%d",&n);
+            if(n%2==0)
+                printf("Even");
+            else
+                printf("Odd");
+            break;
+
+        case 2:
+            scanf("%d",&n);
+            if(n>=0)
+                printf("Positive");
+            else
+                printf("Negative");
+            break;
+
+        default:
+            printf("Invalid Choice");
+    }
+}
