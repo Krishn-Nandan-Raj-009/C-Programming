@@ -235,3 +235,113 @@ int main()
 }
 
 
+🟢 1. Print Hello World
+#include<stdio.h>
+
+int main()
+{
+    printf("Hello World");
+    return 0;
+}
+
+Output:
+
+Hello World
+🟢 2. Input and Print an Integer
+#include<stdio.h>
+
+int main()
+{
+    int num;
+
+    scanf("%d",&num);
+
+    printf("Number = %d",num);
+
+    return 0;
+}
+🟢 3. Add Two Numbers
+#include<stdio.h>
+
+int main()
+{
+    int a,b,sum;
+
+    scanf("%d%d",&a,&b);
+
+    sum=a+b;
+
+    printf("Sum = %d",sum);
+
+    return 0;
+}
+🟢 4. Find Difference of Two Numbers
+#include<stdio.h>
+
+int main()
+{
+    int a,b;
+
+    scanf("%d%d",&a,&b);
+
+    printf("Difference = %d",a-b);
+
+    return 0;
+}
+🟢 5. Multiply Two Numbers
+#include<stdio.h>
+
+int main()
+{
+    int a,b;
+
+    scanf("%d%d",&a,&b);
+
+    printf("Product = %d",a*b);
+
+    return 0;
+}
+🟢 6. Divide Two Numbers
+#include<stdio.h>
+
+int main()
+{
+    int a,b;
+
+    scanf("%d%d",&a,&b);
+
+    printf("Quotient = %d",a/b);
+
+    return 0;
+}
+🟢 7. Find Remainder
+#include<stdio.h>
+
+int main()
+{
+    int a,b;
+
+    scanf("%d%d",&a,&b);
+
+    printf("Remainder = %d",a%b);
+
+    return 0;
+}
+🟢 8. Swap Two Numbers Using Third Variable
+#include<stdio.h>
+
+int main()
+{
+    int a,b,temp;
+
+    scanf("%d%d",&a,&b);
+
+    temp=a;
+    a=b;
+    b=temp;
+
+    printf("%d %d",a,b);
+
+    return 0;
+}
+
