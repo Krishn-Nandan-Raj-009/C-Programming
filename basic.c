@@ -57,6 +57,181 @@ scanf("%d%d%d",&s,&ta,&da) ;
 td=ta+da;
 t=s+(s*(td)); 
 printf("%d",t);
-
   return 0;
 }
+
+
+🟡 9. Swap Without Third Variable
+#include<stdio.h>
+
+int main()
+{
+    int a,b;
+
+    scanf("%d%d",&a,&b);
+
+    a=a+b;
+    b=a-b;
+    a=a-b;
+
+    printf("%d %d",a,b);
+
+    return 0;
+}
+🟡 10. Calculate Area of Rectangle
+#include<stdio.h>
+
+int main()
+{
+    int length,breadth;
+
+    scanf("%d%d",&length,&breadth);
+
+    printf("Area = %d",length*breadth);
+
+    return 0;
+}
+🟡 11. Calculate Area of Circle
+#include<stdio.h>
+
+int main()
+{
+    float r;
+
+    scanf("%f",&r);
+
+    printf("Area = %.2f",3.14*r*r);
+
+    return 0;
+}
+🟡 12. Calculate Simple Interest
+
+Formula:
+
+SI = (P × R × T)/100
+#include<stdio.h>
+
+int main()
+{
+    float p,r,t,si;
+
+    scanf("%f%f%f",&p,&r,&t);
+
+    si=(p*r*t)/100;
+
+    printf("%.2f",si);
+
+    return 0;
+}
+🟡 13. Convert Celsius to Fahrenheit
+
+Formula:
+
+F = (C × 9/5) + 32
+#include<stdio.h>
+
+int main()
+{
+    float c,f;
+
+    scanf("%f",&c);
+
+    f=(c*9/5)+32;
+
+    printf("%.2f",f);
+
+    return 0;
+}
+🟠 14. Demonstrate Type Casting
+#include<stdio.h>
+
+int main()
+{
+    int a=5,b=2;
+
+    float result;
+
+    result=(float)a/b;
+
+    printf("%.2f",result);
+
+    return 0;
+}
+
+Output:
+
+2.50
+🟠 15. Increment and Decrement Operators
+#include<stdio.h>
+
+int main()
+{
+    int a=10;
+
+    printf("%d\n",++a);
+
+    printf("%d\n",a--);
+
+    printf("%d",a);
+
+    return 0;
+}
+
+Output:
+
+11
+11
+10
+🟠 16. Relational Operators Demo
+#include<stdio.h>
+
+int main()
+{
+    int a=10,b=20;
+
+    printf("%d\n",a>b);
+    printf("%d\n",a<b);
+    printf("%d\n",a==b);
+
+    return 0;
+}
+
+Output:
+
+0
+1
+0
+🔴 17. Logical Operators Demo
+#include<stdio.h>
+
+int main()
+{
+    int a=5,b=10;
+
+    printf("%d\n",(a<b && b>0));
+    printf("%d\n",(a>b || b>0));
+    printf("%d\n",!(a>b));
+
+    return 0;
+}
+
+Output:
+
+1
+1
+1
+🔴 18. Bitwise Operators Demo
+#include<stdio.h>
+
+int main()
+{
+    int a=5,b=3;
+
+    printf("AND = %d\n",a&b);
+    printf("OR = %d\n",a|b);
+    printf("XOR = %d\n",a^b);
+
+    return 0;
+}
+
+
