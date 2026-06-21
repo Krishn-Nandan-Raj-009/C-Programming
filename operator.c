@@ -8,6 +8,169 @@ int main(){
 }
 
 
+
+
+
+🟢 Arithmetic Operators
+1. Addition of Two Numbers
+C
+
+#include<stdio.h>
+
+int main()
+{
+    int a,b;
+
+    scanf("%d%d",&a,&b);
+
+    printf("Sum = %d",a+b);
+
+    return 0;
+}
+2. All Arithmetic Operations
+C
+
+#include<stdio.h>
+
+int main()
+{
+    int a=20,b=5;
+
+    printf("Add = %d\n",a+b);
+    printf("Sub = %d\n",a-b);
+    printf("Mul = %d\n",a*b);
+    printf("Div = %d\n",a/b);
+    printf("Mod = %d\n",a%b);
+
+    return 0;
+}
+3. Simple Calculator
+C
+
+#include<stdio.h>
+
+int main()
+{
+    int a,b;
+
+    scanf("%d%d",&a,&b);
+
+    printf("Addition = %d\n",a+b);
+    printf("Subtraction = %d\n",a-b);
+    printf("Multiplication = %d\n",a*b);
+
+    return 0;
+}
+🟢 Unary Operators
+4. Pre Increment
+C
+
+#include<stdio.h>
+
+int main()
+{
+    int a=10;
+
+    printf("%d",++a);
+
+    return 0;
+}
+Output:
+
+
+11
+5. Post Increment
+C
+
+#include<stdio.h>
+
+int main()
+{
+    int a=10;
+
+    printf("%d",a++);
+
+    return 0;
+}
+Output:
+
+
+10
+6. Pre/Post Demo
+C
+
+#include<stdio.h>
+
+int main()
+{
+    int a=5;
+
+    printf("%d\n",++a);
+    printf("%d\n",a++);
+    printf("%d",a);
+
+    return 0;
+}
+Output:
+
+
+6
+6
+7
+🟡 Relational Operators
+7. Greater Than Check
+C
+
+#include<stdio.h>
+
+int main()
+{
+    int a=20,b=10;
+
+    printf("%d",a>b);
+
+    return 0;
+}
+Output:
+
+
+1
+8. Equality Check
+C
+
+#include<stdio.h>
+
+int main()
+{
+    int a=10,b=10;
+
+    printf("%d",a==b);
+
+    return 0;
+}
+Output:
+
+
+1
+9. Largest Number
+C
+
+#include<stdio.h>
+
+int main()
+{
+    int a,b;
+
+    scanf("%d%d",&a,&b);
+
+    if(a>b)
+        printf("%d",a);
+    else
+        printf("%d",b);
+
+    return 0;
+}
+
 🟡 Logical Operators
 10. AND Operator
 C
