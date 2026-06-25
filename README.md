@@ -7,7 +7,7 @@
 ![Programs](https://img.shields.io/badge/Programs-Chapter%20Wise-orange)
 
 </div>           
-
+                       
 ## 📖 About This Repositories 
 
 This repository contains my **chapter-wise C programming practice programs** created while learning and strengthening my programming fundamentals.
@@ -22,7 +22,7 @@ The purpose of this repository is to:
 
 _____------_____------__________--------_______=========-------------==========
 
-## 🎯 Learning Objectives
+## 🎯 Learning Objectives ---------  
 
 - Understand core programming concepts
 - Develop logical thinking and coding skills
@@ -32,7 +32,7 @@ _____------_____------__________--------_______=========-------------==========
 
 ---
 
-## 📚 Topics Covered
+## 📚 Topics Covered ----------
 
 ### 1. Introduction to C
 - Structure of a C Program
@@ -95,7 +95,8 @@ _____------_____------__________--------_______=========-------------==========
 
 ---
 
-## 📂 Repository Structure
+## 📂 Repository Structure   ------- ________--------
+
 
 ```text
 C-Programming-Practice/
