@@ -1,4 +1,4 @@
-# C Programming Practice Repository
+# C Programming Practice Repository ------
 
 <div align="center">
 
@@ -118,7 +118,7 @@ C-Programming-Practice/
 
 ---
 
-## 💻 How to Run Programs
+## 💻 How to Run Programs  -----
 
 ### Using GCC Compiler
 
