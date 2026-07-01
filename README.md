@@ -167,7 +167,7 @@ output.exe
 
 ---
 
-## 📈 Future Goals
+## 📈 Future Goals  ------
 
 - Complete all C programming topics
 - Add important interview questions
