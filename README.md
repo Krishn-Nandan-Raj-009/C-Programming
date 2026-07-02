@@ -159,7 +159,7 @@ output.exe
 
 -----  ------   -------- ----------  --------
 
-## 🛠 Technologies Used
+## 🛠 Technologies Used ------
 
 - C Programming Language
 - GCC Compiler
