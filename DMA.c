@@ -28,7 +28,7 @@ int main() {
 
     for(int i=n;i<ns;i++){
         scanf("%d",ptr+i);
-
+             
     }
 
      printf(" new values are");
