@@ -179,7 +179,7 @@ output.exe
 
 ## 👨‍💻 Author
 
-**Krishna Nandan Raj**     
+** #Krishna Nandan Raj**     
 
 CSE Student | Open Source Enthusiast | Future AI/ML Engineer
 
