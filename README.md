@@ -6,7 +6,7 @@
 ![Status](https://img.shields.io/badge/Status-Learning-success)
 ![Programs](https://img.shields.io/badge/Programs-Chapter%20Wise-orange)
 
-</div> ---------         
+</div> ---------                         
                        
 ## 📖 About This Repositories ------
 
